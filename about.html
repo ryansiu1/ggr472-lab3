@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR472 L3</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <!-- mapbox geocoder plugin -->
+    <script
+        src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet"
+        href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css"
+        type="text/css">
+    <!-- Bootstrap styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body style="background-color:#1f1f1f;">
+    <div>
+        <!--Adding a navbar to the top of the website-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand">GGR472</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="paragraph" style="margin-left: 25%; text-align:justify">
+        <br>
+        <h1 style="text-align:center" ;> Mapping the Income Distribution Across Toronto!</h1>
+        <br>
+        <p1;>This map illustrates the Median Household Income by Census Tract for the City of Toronto, 2015. </p1>
+            <p2> Regions of highest median income are located in Central Toronto, and the Royal York Rd and Bloor St
+                area.
+                Regions of lower median income are located along Northwest Etobicoke, down and through the downtown
+                core, and upwards through Scarborough.</p2>
+            <p2 style="text-align:center" ;>You can explore more about the income distribution for Toronto <a
+                    target=”_blank”
+                    href=https://www.toronto.ca/wp-content/uploads/2017/10/8f41-2016-Census-Backgrounder-Income.pdf
+                    style="color:rgb(252, 207, 7)">here</a>.</p2>
+            <br>
+            <p2;>The census tracts have been classified by their relative ranking, with darker shades of green
+                representing a higher median income.</p2>
+    </div>
+    <br>
+    <br>
+    <!-- Adding an image that will zoom in when the mouse cursor moves over the image -->
+    <div class="zoom">
+        <img src="https://external-preview.redd.it/8S91xIL7r5mvF6yXwI6Bjgtsu8motJvGR9YdwiUrpu0.jpg?auto=webp&s=1bd68221bbcb6c3f9f3998e557e15a54a02cac24"
+            alt="Income" class="center" , width="30%">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

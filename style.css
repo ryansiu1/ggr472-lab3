@@ -1,0 +1,123 @@
+/*positioning styling for the map body*/
+.map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 55px;
+}
+
+/*styling for search bar/geocoding tool*/
+.map-overlay-search {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #ceffce;
+    top: 0;
+    left: 0;
+    width: 260px;
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    /*around elements inside of overlay*/
+    overflow: visible;
+}
+
+.geocoder {
+    position: relative;
+    margin: 10px 0 10px;
+}
+
+#returnbutton {
+    position: relative;
+    margin: 10px 0 10px;
+    width: 100%;
+}
+
+.map-overlay-data {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #ceffce;
+    width: 260px;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+}
+
+/*created a textbox that will display the median income*/
+.textbox {
+    position: relative;
+    font: 14px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    background: #ceffce;
+    width: 260px;
+    top: 0;
+    left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    overflow: visible;
+}
+
+.legend {
+    position: absolute;
+    display: none;
+    background-color: #ceffce;
+    border-radius: 3px;
+    bottom: 0;
+    margin-bottom: 30px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    /*horizontal shadow, vertical shadow, size of shadow, color*/
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.legend h4 {
+    margin: 0 0 10px;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius: 50%;
+    /*curve border to make a circle*/
+    height: 10px;
+    /*size of circle*/
+    width: 10px;
+    margin-right: 5px;
+    /*position of circle*/
+}
+
+/*styling for text*/
+.paragraph {
+    color: rgb(231, 226, 226);
+    margin-right: 25%;
+}
+
+/*styling for popups displaying CTUID*/
+.mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+/*creating a zoom animation for the image (timing)*/
+.zoom {
+
+    transition: transform .2s;
+    /* Animation */
+}
+
+/*the extent of the scaling up*/
+.zoom:hover {
+    transform: scale(1.25);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*centering the image in the about page*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
